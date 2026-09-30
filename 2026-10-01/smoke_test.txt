@@ -1,0 +1,3 @@
+pass1 burden_risk=0.57 wandering=False nudge=no_action_monitor
+pass2 burden_risk=1.0 wandering=True nudge=night_check_protocol verified=True
+critique pass1: wandering_flag must be True when night_exits+breaches=5 >= 3
