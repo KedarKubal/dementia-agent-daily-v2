@@ -1,0 +1,8 @@
+=== SAMPLE ===
+I went to the [PAUSE] store yesterday and [PAUSE] then I [PAUSE] forgot why I [PAUSE] was there so I [PAUSE] came home.
+duration_sec: 18.0
+
+=== BEFORE / AFTER ===
+pass1 flag/score: typical 0.284
+final flag/score: elevated 0.48
+final verifier: passed True (meets criteria)
