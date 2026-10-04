@@ -1,0 +1,29 @@
+[
+  {
+    "pass": 1,
+    "draft": {
+      "sample_id": "EOAD-LEADS-017",
+      "features_used": ["pause_rate"],
+      "differential": "impairment_unspecified",
+      "referral_flag": true,
+      "retention_ratio": null,
+      "rationale": "Pause rate 0.31 treated as a binary impairment flag. No story units."
+    },
+    "verifier": {"pass": false, "reasons": ["pause-only or missing idea-unit features", "retention_ratio missing"]}
+  },
+  {
+    "pass": 2,
+    "draft": {
+      "sample_id": "EOAD-LEADS-017",
+      "features_used": ["immediate_idea_units", "delayed_idea_units", "retention_ratio"],
+      "immediate_hits": ["u1_boy", "u2_dog", "u3_park", "u4_red_ball", "u5_lake", "u6_ducks", "u7_mother_calls", "u8_ice_cream"],
+      "delayed_hits": ["u1_boy", "u2_dog", "u3_park", "u4_red_ball"],
+      "missing_delayed": ["u5_lake", "u6_ducks", "u7_mother_calls", "u8_ice_cream"],
+      "retention_ratio": 0.5,
+      "differential": "storage_loss_pattern",
+      "referral_flag": true,
+      "rationale": "Revised after critique. Delayed/immediate retention=0.500; missing delayed units include lake, ducks, mother call, ice cream."
+    },
+    "verifier": {"pass": true, "reasons": ["retention ledger matches the storage-loss rule"]}
+  }
+]
