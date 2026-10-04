@@ -1,4 +1,4 @@
-# 2026-10-04 — Sparse Cookie-Theft biomarker panel
+# 2026-10-04 — Biomarker panel
 
 Opportunity: ship the selected spoken-language biomarkers (Ke, Mak, Meng 2024 dual-dropout ranking), not a pause-only score.
 
