@@ -1,0 +1,42 @@
+[
+  {
+    "pass": 1,
+    "draft": {
+      "case_id": "SPEECHDX-044",
+      "label": "higher_risk_progressor",
+      "speech_slope_z": 1.35,
+      "plasma_ptau217_status": "not_collected",
+      "features_cited": {},
+      "rationale": "Speech slope z=1.35 alone crosses 1.0; emitted a risk band without a plasma gate.",
+      "next_step": "memory_clinic_referral"
+    },
+    "verdict": {
+      "pass": false,
+      "reasons": [
+        "need >=2 numeric linguistic features (idea_density, pronoun_ratio, content_word_ratio); got []",
+        "plasma p-tau217 missing; label must be indeterminate_needs_plasma, not higher_risk_progressor",
+        "higher_risk_progressor requires speech_slope_z>=1.0 AND plasma_ptau217_status==positive"
+      ]
+    }
+  },
+  {
+    "pass": 2,
+    "draft": {
+      "case_id": "SPEECHDX-044",
+      "label": "indeterminate_needs_plasma",
+      "speech_slope_z": 1.35,
+      "plasma_ptau217_status": "not_collected",
+      "features_cited": {
+        "idea_density": 0.31,
+        "pronoun_ratio": 0.22,
+        "content_word_ratio": 0.41
+      },
+      "rationale": "Speech slope is informative but plasma p-tau217 is missing; refusing a progressor band until the second gate closes.",
+      "next_step": "collect_plasma_ptau217_then_rescore"
+    },
+    "verdict": {
+      "pass": true,
+      "reasons": ["dual gate and feature citations satisfied"]
+    }
+  }
+]
