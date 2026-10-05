@@ -1,0 +1,47 @@
+{
+  "sample": {
+    "speaker_id": "MCI-LEX-118",
+    "baseline_n": 4,
+    "lexical_frequency_delta": 0.22,
+    "familiarity_delta": 0.14,
+    "partial_word_delta": 0.06,
+    "pause_rate": 0.31,
+    "info_unit_count": 11
+  },
+  "passes": [
+    {
+      "candidate": {
+        "speaker_id": "MCI-LEX-118",
+        "baseline_n": 4,
+        "features_used": ["pause_rate"],
+        "referral_flag": true,
+        "rationale": "Elevated pause rate versus a population cutoff.",
+        "next_step": "clinician_review",
+        "pass_index": 1
+      },
+      "critique": {
+        "passed": false,
+        "reasons": [
+          "missing deciding features: lexical_frequency_delta, familiarity_delta, partial_word_delta",
+          "sole driver is a banned prior-day feature (pause_rate or info_unit_count)",
+          "flagged rationale must name within-person lexical drift"
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "speaker_id": "MCI-LEX-118",
+        "baseline_n": 4,
+        "features_used": ["lexical_frequency_delta", "familiarity_delta", "partial_word_delta"],
+        "lexical_frequency_delta": 0.22,
+        "familiarity_delta": 0.14,
+        "partial_word_delta": 0.06,
+        "referral_flag": true,
+        "rationale": "Within-person lexical drift: higher-frequency and more familiar words plus more partial words versus this speaker's own baseline.",
+        "next_step": "clinician_review",
+        "pass_index": 2
+      },
+      "critique": {"passed": true, "reasons": []}
+    }
+  ]
+}
