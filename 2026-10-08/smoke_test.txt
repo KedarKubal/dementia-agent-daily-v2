@@ -1,0 +1,2 @@
+ROBOT-CONV-088 pass1: axes={anomia: 0.7} n=1 composite=null label=black_box_impaired FAIL (n_axes<4, composite missing, black-box)
+ROBOT-CONV-088 pass2: six axes composite=0.497 label=elevated_composite PASS

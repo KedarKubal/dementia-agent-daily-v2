@@ -9,3 +9,4 @@
 2026-10-05b | Within-person lexical frequency/familiarity drift flag | GVU drops pause-only draft; MCI-LEX-118 freq delta 0.22 familiarity 0.14 partial-word 0.06, referral true, pass2 ok; nested under 2026-10-05/lexical-drift so craft-story files stay intact
 2026-10-06 | Dual-gate speech-slope x plasma p-tau217 progressor desk | GVU drops speech-only higher_risk_progressor; SPEECHDX-044 slope z 1.35 plasma missing, label -> indeterminate_needs_plasma, pass2 ok
 2026-10-07 | Embedding-discard ASR speech screen | GVU strips transcript leak; ADRD-EMB-077 distance 0.57 keyword_screen fail -> elevated_embedding pass2 ok
+2026-10-08 | Six-axis conversational speech biomarker card | GVU drops anomia-only black-box flag; ROBOT-CONV-088 composite 0.497 elevated_composite, pass2 ok
