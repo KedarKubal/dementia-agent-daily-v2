@@ -1,0 +1,3 @@
+sample ADRD-EMB-077
+pass 1 FAIL: lexical keys present [keyword_hits, tokens, transcript]; basis transcript_keywords; risk_score 0.724 referral_flag true
+pass 2 PASS: discarded_lexical true; basis asr_embedding_distance_only; distance 0.57; label elevated_embedding; referral_flag true; risk_score 0.57
