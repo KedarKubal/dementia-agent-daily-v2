@@ -11,3 +11,4 @@
 2026-10-07 | Embedding-discard ASR speech screen | GVU strips transcript leak; ADRD-EMB-077 distance 0.57 keyword_screen fail -> elevated_embedding pass2 ok
 2026-10-08 | Six-axis conversational speech biomarker card | GVU drops anomia-only black-box flag; ROBOT-CONV-088 composite 0.497 elevated_composite, pass2 ok
 2026-10-10 | Circadian rest-activity IV/RA fragmentation desk | GVU drops sleep-only flag; WASHU-CIRC-210 IV 0.91 driver total_sleep_hours -> intradaily_variability, next_step sleep_hygiene_leaflet -> circadian_clinic_review, pass2 ok
+2026-10-11 | Speech age gap multi-clock screening | GVU multi-feature SAG stable elevated 6.4 on MCI-like sample; pass1 ok (multi-feature range met)
