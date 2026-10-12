@@ -13,3 +13,4 @@
 2026-10-10 | Circadian rest-activity IV/RA fragmentation desk | GVU drops sleep-only flag; WASHU-CIRC-210 IV 0.91 driver total_sleep_hours -> intradaily_variability, next_step sleep_hygiene_leaflet -> circadian_clinic_review, pass2 ok
 2026-10-11 | Speech age gap multi-clock screening | GVU multi-feature SAG stable elevated 6.4 on MCI-like sample; pass1 ok (multi-feature range met)
 2026-10-12 | Speech pause/DTW similarity risk flag from wearable mic reading task | GVU heuristic matches Cay et al. 2024 features; smoke-test high-pause sample flags HIGH 0.85 pass1 ok
+2026-10-13 | Modular speech detectors for CI risk flag (WATCH-SS insight) | GVU self-improves risk assessment from pause/lexical features; smoke-test HIGH 0.85 pass1 ok
