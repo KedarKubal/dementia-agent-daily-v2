@@ -15,3 +15,4 @@
 2026-10-12 | Speech pause/DTW similarity risk flag from wearable mic reading task | GVU heuristic matches Cay et al. 2024 features; smoke-test high-pause sample flags HIGH 0.85 pass1 ok
 2026-10-13 | Modular speech detectors for CI risk flag (WATCH-SS insight) | GVU self-improves risk assessment from pause/lexical features; smoke-test HIGH 0.85 pass1 ok
 2026-10-14 | SpeechDETECT SHAP/cumulative-gains triage ranker for speech screening | GVU boosts score 0.399->0.749 and adds pause_ratio to top_features; pass1 fail -> pass2 ok
+2026-10-15 | Passive foundation-model (Whisper-style) ambient speech embedding risk flag | GVU boosts score 0.460->0.540 after verifier under-detection; pass1 fail -> pass2 ok
