@@ -1,0 +1,75 @@
+[
+  {
+    "pass": 1,
+    "output": {
+      "speech_age": 82.8,
+      "speech_age_gap": 10.8,
+      "risk_score": 0.9,
+      "flag": "elevated",
+      "weights_used": {
+        "pause": 0.1,
+        "rate": 0.4,
+        "lex": 0.3,
+        "pitch": 0.2
+      }
+    },
+    "passed": false,
+    "reason": "FAIL: pause weight too low; acoustic pauses are key in speech clocks",
+    "weights_in": {
+      "pause": 0.1,
+      "rate": 0.4,
+      "lex": 0.3,
+      "pitch": 0.2
+    }
+  },
+  {
+    "pass": 2,
+    "output": {
+      "speech_age": 82.3,
+      "speech_age_gap": 10.3,
+      "risk_score": 0.858,
+      "flag": "elevated",
+      "weights_used": {
+        "pause": 0.238,
+        "rate": 0.333,
+        "lex": 0.238,
+        "pitch": 0.19
+      }
+    },
+    "passed": false,
+    "reason": "FAIL: pause weight too low; acoustic pauses are key in speech clocks",
+    "weights_in": {
+      "pause": 0.238,
+      "rate": 0.333,
+      "lex": 0.238,
+      "pitch": 0.19
+    }
+  },
+  {
+    "pass": 3,
+    "output": {
+      "speech_age": 81.8,
+      "speech_age_gap": 9.8,
+      "risk_score": 0.82,
+      "flag": "elevated",
+      "weights_used": {
+        "pause": 0.37,
+        "rate": 0.27,
+        "lex": 0.179,
+        "pitch": 0.181
+      }
+    },
+    "passed": true,
+    "reason": "PASS: SAG and risk meet elevated threshold; pause weighted adequately",
+    "weights_in": {
+      "pause": 0.37,
+      "rate": 0.27,
+      "lex": 0.179,
+      "pitch": 0.181
+    }
+  }
+]
+
+--- SMOKE TEST SUMMARY ---
+Pass 1 risk: 0.9 flag: elevated | FAIL: pause weight too low; acoustic pauses are key in speech clocks
+Pass 3 risk: 0.82 flag: elevated | PASS: SAG and risk meet elevated threshold; pause weighted adequately
