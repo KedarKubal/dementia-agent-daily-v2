@@ -1,0 +1,61 @@
+[
+  {
+    "pass": 1,
+    "plan": {
+      "patient_id": "ACTIVE-SPEED-042",
+      "modules": [
+        "speed_of_processing",
+        "memory_strategy"
+      ],
+      "weekly_dose": 3,
+      "adherence_target": 0.8,
+      "booster_sessions": 1,
+      "pass": 1,
+      "rationale": "Initial ACTIVE-inspired plan"
+    },
+    "verify": {
+      "pass": false,
+      "reason": "low adherence not addressed by dose reduction",
+      "critique": "low adherence not addressed by dose reduction"
+    }
+  },
+  {
+    "pass": 2,
+    "plan": {
+      "patient_id": "ACTIVE-SPEED-042",
+      "modules": [
+        "speed_of_processing"
+      ],
+      "weekly_dose": 2,
+      "adherence_target": 0.8,
+      "booster_sessions": 0,
+      "pass": 2,
+      "rationale": "Adapted from critique: low adherence not addressed by dose reduction"
+    },
+    "verify": {
+      "pass": false,
+      "reason": "low progress not addressed by booster",
+      "critique": "low progress not addressed by booster"
+    }
+  },
+  {
+    "pass": 3,
+    "plan": {
+      "patient_id": "ACTIVE-SPEED-042",
+      "modules": [
+        "speed_of_processing",
+        "memory_strategy"
+      ],
+      "weekly_dose": 4,
+      "adherence_target": 0.7,
+      "booster_sessions": 1,
+      "pass": 3,
+      "rationale": "Adapted from critique: low progress not addressed by booster"
+    },
+    "verify": {
+      "pass": false,
+      "reason": "low adherence not addressed by dose reduction",
+      "critique": "low adherence not addressed by dose reduction"
+    }
+  }
+]
