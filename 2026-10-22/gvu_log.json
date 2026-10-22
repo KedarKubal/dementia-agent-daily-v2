@@ -1,0 +1,28 @@
+[
+  {
+    "pass": 1,
+    "output": {
+      "risk_score": 0.731,
+      "flag": "elevated",
+      "modalities_used": [
+        "audio_pause",
+        "audio_rate",
+        "video_facial",
+        "text_lexical"
+      ],
+      "task": "command_reading",
+      "weights": {
+        "pause": 0.3,
+        "rate": 0.2,
+        "facial": 0.25,
+        "lexical": 0.25
+      },
+      "rationale": "Multimodal fusion score 0.731 from everyday interaction cues"
+    },
+    "verification": {
+      "pass": true,
+      "critique": "pass: multimodal fusion meets criteria",
+      "reasons": []
+    }
+  }
+]

@@ -20,3 +20,4 @@
 2026-10-18 | Adaptive speed-of-processing training dose GVU (ACTIVE insight) | GVU adjusts dose/modules/boosters on low adherence+progress; smoke pass1 dose3 dual modules -> pass2 dose2 single -> pass3 dose4 with booster
 2026-10-19 | Multi-feature speech risk flag (reject single-cue FPs) | GVU rebalances pause/hesitation/lex weights on short sample; pass1 0.308 low -> pass2 0.295 low after short-sample + confidence critique
 2026-10-20 | Adaptive multidomain lifestyle coach (Brodaty Nature Med insight) | GVU adjusts module doses on total/adherence/progress critiques; pure-Python loop, smoke shows criteria-driven updates
+2026-10-22 | Multimodal contactless Alexa-style speech/video/text MCI screen (Task-Centric Multimodal paper) | GVU multimodal fusion; smoke elevated 0.731 pass1 ok
