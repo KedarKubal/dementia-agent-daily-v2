@@ -21,3 +21,4 @@
 2026-10-19 | Multi-feature speech risk flag (reject single-cue FPs) | GVU rebalances pause/hesitation/lex weights on short sample; pass1 0.308 low -> pass2 0.295 low after short-sample + confidence critique
 2026-10-20 | Adaptive multidomain lifestyle coach (Brodaty Nature Med insight) | GVU adjusts module doses on total/adherence/progress critiques; pure-Python loop, smoke shows criteria-driven updates
 2026-10-22 | Multimodal contactless Alexa-style speech/video/text MCI screen (Task-Centric Multimodal paper) | GVU multimodal fusion; smoke elevated 0.731 pass1 ok
+2026-10-25 | Iterative speech feature refinement for MCI risk flag (DDR/speech biomarker insight) | GVU boosts pause/lex weights on high-risk sample; score low->elevated pass2 ok
