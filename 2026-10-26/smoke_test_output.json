@@ -1,0 +1,57 @@
+{
+  "sample": {
+    "max_walking_speed": 0.75,
+    "step_time_variability": 1.4,
+    "running_duration_min": 0.0,
+    "bedtime_hour": 21.5
+  },
+  "logs": [
+    {
+      "pass": 1,
+      "output": {
+        "risk_score": 0.427,
+        "elevated_flag": false,
+        "top_features": [
+          "step_time_variability",
+          "max_walking_speed_inv"
+        ],
+        "weights_used": {
+          "max_walking_speed_inv": 0.05,
+          "step_time_variability": 0.1,
+          "running_duration_min": -0.05,
+          "bedtime_early": 0.05
+        }
+      },
+      "critique": {
+        "pass": false,
+        "reasons": [
+          "Score 0.427 < 0.65 for slow walker",
+          "Flag not elevated for slow walker"
+        ]
+      }
+    },
+    {
+      "pass": 2,
+      "output": {
+        "risk_score": 0.676,
+        "elevated_flag": true,
+        "top_features": [
+          "max_walking_speed_inv",
+          "step_time_variability"
+        ],
+        "weights_used": {
+          "max_walking_speed_inv": 0.27,
+          "step_time_variability": 0.09000000000000001,
+          "running_duration_min": -0.045000000000000005,
+          "bedtime_early": 0.045000000000000005
+        }
+      },
+      "critique": {
+        "pass": true,
+        "reasons": [
+          "Meets criterion"
+        ]
+      }
+    }
+  ]
+}

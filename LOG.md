@@ -22,3 +22,4 @@
 2026-10-20 | Adaptive multidomain lifestyle coach (Brodaty Nature Med insight) | GVU adjusts module doses on total/adherence/progress critiques; pure-Python loop, smoke shows criteria-driven updates
 2026-10-22 | Multimodal contactless Alexa-style speech/video/text MCI screen (Task-Centric Multimodal paper) | GVU multimodal fusion; smoke elevated 0.731 pass1 ok
 2026-10-25 | Iterative speech feature refinement for MCI risk flag (DDR/speech biomarker insight) | GVU boosts pause/lex weights on high-risk sample; score low->elevated pass2 ok
+2026-10-26 | Wrist-sensor max-speed/running/bedtime incident dementia risk refiner | GVU boosts speed weight on slow sample; score 0.427 fail -> 0.676 pass2 ok
