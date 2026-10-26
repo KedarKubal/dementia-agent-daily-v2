@@ -1,0 +1,43 @@
+=== Smoke Test: Cross-modal AD Risk Flag GVU ===
+[
+  {
+    "pass": 1,
+    "output": {
+      "risk_score": 0.401,
+      "flag": "typical",
+      "weights_used": {
+        "pause": 0.55,
+        "lexical": 0.45
+      },
+      "threshold": 0.42,
+      "features": {
+        "pause_ratio": 0.32,
+        "lexical_div": 0.5
+      }
+    },
+    "passed": false,
+    "reason": "Flag mismatch: predicted typical vs true elevated. Score=0.401"
+  },
+  {
+    "pass": 2,
+    "output": {
+      "risk_score": 0.383,
+      "flag": "elevated",
+      "weights_used": {
+        "pause": 0.65,
+        "lexical": 0.35
+      },
+      "threshold": 0.36,
+      "features": {
+        "pause_ratio": 0.32,
+        "lexical_div": 0.5
+      }
+    },
+    "passed": true,
+    "reason": "Pass: flag matches criterion and constraints held"
+  }
+]
+
+Before (pass 1 flag): typical score: 0.401
+After (final flag): elevated score: 0.383
+Passes used: 2
