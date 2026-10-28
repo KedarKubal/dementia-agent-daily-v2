@@ -1,0 +1,34 @@
+[
+  {
+    "pass": 1,
+    "output": {
+      "flag": "typical",
+      "score": 0.416,
+      "confidence": 0.608,
+      "psd_weight": 0.2,
+      "blood_weight": 0.3,
+      "rationale": "score=PSD*0.20+blood*0.30"
+    },
+    "verifier": {
+      "pass": false,
+      "reason": "Failed criterion (under/over detection)",
+      "critique": "boost_psd boost_blood"
+    }
+  },
+  {
+    "pass": 2,
+    "output": {
+      "flag": "elevated",
+      "score": 0.711,
+      "confidence": 0.756,
+      "psd_weight": 0.45,
+      "blood_weight": 0.45,
+      "rationale": "score=PSD*0.45+blood*0.45"
+    },
+    "verifier": {
+      "pass": true,
+      "reason": "OK: elevated high-risk with conf>=0.65",
+      "critique": ""
+    }
+  }
+]
