@@ -25,3 +25,4 @@
 2026-10-26 | Wrist-sensor max-speed/running/bedtime incident dementia risk refiner | GVU boosts speed weight on slow sample; score 0.427 fail -> 0.676 pass2 ok
 2026-10-27 | Cross-modal acoustic-linguistic fusion weight refiner for AD speech screen (Ding et al. 2026) | GVU lowers threshold and boosts pause weight; borderline flag typical 0.401 -> elevated 0.383 pass2 ok
 2026-10-28 | PSD + fluid biomarker (p-tau217/GFAP) fusion weight refiner for early CI speech flag | GVU boosts PSD/blood weights; high-risk sample typical 0.416 fail -> elevated 0.711 pass2 ok
+2026-10-29 | Pause-prioritized selective speech biomarker risk flag | GVU boosts pause weight; high-pause sample pass1 elevated but pause not top -> pass2 pause prioritized 0.623 ok
