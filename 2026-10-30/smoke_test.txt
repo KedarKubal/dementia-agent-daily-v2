@@ -1,0 +1,36 @@
+[
+  {
+    "pass": 1,
+    "output": {
+      "risk_flag": "typical",
+      "score": 0.306,
+      "reason": "vel_drop=0.31, var_inc=0.14",
+      "top_feature": "curve_variability"
+    },
+    "verifier": {
+      "pass": false,
+      "reason": "Flag mismatch with criterion.",
+      "expected_elevated": true
+    },
+    "critique_used": ""
+  },
+  {
+    "pass": 2,
+    "output": {
+      "risk_flag": "elevated",
+      "score": 0.556,
+      "reason": "vel_drop=0.31, var_inc=0.14 | after critique: under-detect; boost curve weight. Previous: Flag m",
+      "top_feature": "curve_variability"
+    },
+    "verifier": {
+      "pass": true,
+      "reason": "Matches expected elevated flag based on >25% velocity drop and >0.1 variability increase on curve.",
+      "expected_elevated": true
+    },
+    "critique_used": "under-detect; boost curve weight. Previous: Flag mismatch with criterion."
+  }
+]
+
+=== Smoke Test ===
+Before (pass 1): flag=typical score=0.306 pass=False
+After (pass 2): flag=elevated score=0.556 pass=True
