@@ -27,3 +27,4 @@
 2026-10-28 | PSD + fluid biomarker (p-tau217/GFAP) fusion weight refiner for early CI speech flag | GVU boosts PSD/blood weights; high-risk sample typical 0.416 fail -> elevated 0.711 pass2 ok
 2026-10-29 | Pause-prioritized selective speech biomarker risk flag | GVU boosts pause weight; high-pause sample pass1 elevated but pause not top -> pass2 pause prioritized 0.623 ok
 2026-10-30 | Curve-walking gait velocity/variability risk flag | GVU boosts score 0.306->0.556 elevated pass2 ok
+2026-10-31 | Self-improving speech embedding risk flag (foundation model insight) | GVU boosts pause weight on high-risk sample; score elevated top=lexical fail -> pause-prioritized pass2 ok
