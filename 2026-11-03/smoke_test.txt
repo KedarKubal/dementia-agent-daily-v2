@@ -1,0 +1,42 @@
+=== Smoke Test: High-Pause Speech Sample ===
+{
+  "pass": 1,
+  "risk_score": 0.429,
+  "flag": "typical",
+  "top_feature": "pause_ratio",
+  "rationale": "Pause ratio 0.42 drives risk; lexical diversity 0.55.",
+  "verifier": {
+    "pass": false,
+    "critique": "Score 0.429 too low for high pause_ratio 0.42; Flag must be 'elevated' for high-pause sample. Boost pause weight and elevate flag.",
+    "reasons": [
+      "Score 0.429 too low for high pause_ratio 0.42",
+      "Flag must be 'elevated' for high-pause sample"
+    ]
+  }
+}
+{
+  "pass": 2,
+  "risk_score": 0.729,
+  "flag": "elevated",
+  "top_feature": "pause_ratio",
+  "rationale": "Pause ratio 0.42 drives risk; lexical diversity 0.55.",
+  "verifier": {
+    "pass": true,
+    "critique": "OK",
+    "reasons": []
+  }
+}
+
+Final output after self-improvement:
+{
+  "pass": 2,
+  "risk_score": 0.729,
+  "flag": "elevated",
+  "top_feature": "pause_ratio",
+  "rationale": "Pause ratio 0.42 drives risk; lexical diversity 0.55.",
+  "verifier": {
+    "pass": true,
+    "critique": "OK",
+    "reasons": []
+  }
+}

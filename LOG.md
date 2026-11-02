@@ -30,3 +30,4 @@
 2026-10-31 | Self-improving speech embedding risk flag (foundation model insight) | GVU boosts pause weight on high-risk sample; score elevated top=lexical fail -> pause-prioritized pass2 ok
 2026-11-01 | SVF-imaging proxy fusion risk flag | GVU boosts SVF/atrophy weights; high-risk sample typical fail -> elevated pass2 ok
 2026-11-02 | Speech biomarker GVU risk scorer (diagnostics) | Prototype shipped; loop refines score against pause/lexical thresholds
+2026-11-03 | Speech voiceprint risk flag (diagnostics) | GVU boosts pause weight on high-pause sample; score 0.429 typical fail -> 0.729 elevated pass2 ok
