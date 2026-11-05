@@ -1,34 +1,55 @@
-[
-  {
-    "pass": 1,
-    "output": {
-      "flag": "typical",
-      "score": 0.416,
-      "confidence": 0.608,
-      "psd_weight": 0.2,
-      "blood_weight": 0.3,
-      "rationale": "score=PSD*0.20+blood*0.30"
+{
+  "sample": {
+    "id": "PREV-2026-042",
+    "baseline_risk_score": 0.72,
+    "adherence": {
+      "physical_activity": 0.35,
+      "nutrition": 0.68,
+      "cognitive_training": 0.55,
+      "mood_depression": 0.42
     },
-    "verifier": {
-      "pass": false,
-      "reason": "Failed criterion (under/over detection)",
-      "critique": "boost_psd boost_blood"
+    "progress": {
+      "physical_activity": 0.2,
+      "nutrition": 0.6,
+      "cognitive_training": 0.4,
+      "mood_depression": 0.3
     }
   },
-  {
-    "pass": 2,
-    "output": {
-      "flag": "elevated",
-      "score": 0.711,
-      "confidence": 0.756,
-      "psd_weight": 0.45,
-      "blood_weight": 0.45,
-      "rationale": "score=PSD*0.45+blood*0.45"
+  "logs": [
+    {
+      "pass": 1,
+      "plan": {
+        "modules": {
+          "physical_activity": 3,
+          "nutrition": 3,
+          "cognitive_training": 3,
+          "mood_depression": 3
+        },
+        "total_active": 4,
+        "rationale": "Initial draft based on risk"
+      },
+      "verifier": {
+        "pass": false,
+        "reason": "too many active modules (>3); physical_activity low adherence but high dose 3; physical_activity low progress but still active; mood_depression low adherence but high dose 3",
+        "critique": "reduce low adherence doses and drop non-progress modules"
+      }
     },
-    "verifier": {
-      "pass": true,
-      "reason": "OK: elevated high-risk with conf>=0.65",
-      "critique": ""
+    {
+      "pass": 2,
+      "plan": {
+        "modules": {
+          "nutrition": 3,
+          "cognitive_training": 2,
+          "mood_depression": 1
+        },
+        "total_active": 3,
+        "rationale": "Initial draft based on risk | critique applied: reduce low adherence doses and drop non-progress m"
+      },
+      "verifier": {
+        "pass": true,
+        "reason": "meets criteria: <=3 modules, low-adh dose<=2, no low-prog active",
+        "critique": ""
+      }
     }
-  }
-]
+  ]
+}
