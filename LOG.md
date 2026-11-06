@@ -32,3 +32,4 @@
 2026-11-02 | Speech biomarker GVU risk scorer (diagnostics) | Prototype shipped; loop refines score against pause/lexical thresholds
 2026-11-03 | Speech voiceprint risk flag (diagnostics) | GVU boosts pause weight on high-pause sample; score 0.429 typical fail -> 0.729 elevated pass2 ok
 2026-11-05 | Adaptive multidomain lifestyle dose adjuster (prevention) | GVU drops low-progress/low-adh physical_activity, reduces doses on low-adh, pass1 4 modules fail -> pass2 3 modules ok
+2026-11-07 | Passive multi-modal speech+gait cognitive reserve trajectory flag | GVU boosts pause/gait weights + bias; high-risk sample 0.591 fail -> 0.644 pass2 ok
