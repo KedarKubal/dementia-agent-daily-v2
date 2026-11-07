@@ -1,0 +1,54 @@
+[
+  {
+    "pass": 1,
+    "output": {
+      "risk_score": 0.488,
+      "flag": "elevated",
+      "weights_used": {
+        "velocity": 0.4,
+        "variability": 0.3,
+        "cadence": 0.3
+      },
+      "features": {
+        "step_velocity_mean": 0.85,
+        "step_velocity_variability": 0.22,
+        "cadence": 95,
+        "cadence_variability": 0.15,
+        "patient_id": "GAIT-MCI-042"
+      }
+    },
+    "verifier": {
+      "pass": false,
+      "reason": "OK; variability not prioritized in weights",
+      "critique": "OK; variability not prioritized in weights"
+    }
+  },
+  {
+    "pass": 2,
+    "output": {
+      "risk_score": 0.494,
+      "flag": "elevated",
+      "weights_used": {
+        "velocity": 0.33333333333333337,
+        "variability": 0.4285714285714285,
+        "cadence": 0.23809523809523808
+      },
+      "features": {
+        "step_velocity_mean": 0.85,
+        "step_velocity_variability": 0.22,
+        "cadence": 95,
+        "cadence_variability": 0.15,
+        "patient_id": "GAIT-MCI-042"
+      }
+    },
+    "verifier": {
+      "pass": true,
+      "reason": "OK",
+      "critique": "Meets criterion"
+    }
+  }
+]
+
+--- Smoke test summary ---
+Pass 1: score=0.488 flag=elevated pass=False
+Pass 2: score=0.494 flag=elevated pass=True
