@@ -34,3 +34,4 @@
 2026-11-05 | Adaptive multidomain lifestyle dose adjuster (prevention) | GVU drops low-progress/low-adh physical_activity, reduces doses on low-adh, pass1 4 modules fail -> pass2 3 modules ok
 2026-11-07 | Passive multi-modal speech+gait cognitive reserve trajectory flag | GVU boosts pause/gait weights + bias; high-risk sample 0.591 fail -> 0.644 pass2 ok
 2026-11-08 | Continuous wearable gait variability risk flag for progression/fall monitoring | GVU boosts variability weight on high-var sample; pass1 elevated but not prioritized fail -> pass2 variability top 0.494 ok
+2026-11-09 | Speech PSD/pause-prioritized GVU risk flag for early CI detection | GVU boosts pause weight on high-pause sample; pass1 elevated but pause not top fail -> pass2 pause prioritized 1.0 ok
