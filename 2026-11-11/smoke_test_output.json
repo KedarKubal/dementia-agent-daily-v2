@@ -1,0 +1,54 @@
+{
+  "sample": {
+    "pause_ratio": 0.62,
+    "lexical_diversity": 0.35,
+    "speaking_rate": 0.28
+  },
+  "gvu_log": [
+    {
+      "pass": 1,
+      "output": {
+        "score": 0.574,
+        "flag": "typical",
+        "top_feature": "pause_ratio",
+        "weights": {
+          "pause_ratio": 0.35,
+          "lexical_diversity": 0.35,
+          "speaking_rate": 0.3
+        }
+      },
+      "passed": false,
+      "reason": "High pause_ratio=0.62 requires top_feature=pause_ratio and score>=0.7; got top=pause_ratio, score=0.574"
+    },
+    {
+      "pass": 2,
+      "output": {
+        "score": 0.699,
+        "flag": "elevated",
+        "top_feature": "pause_ratio",
+        "weights": {
+          "pause_ratio": 0.435,
+          "lexical_diversity": 0.304,
+          "speaking_rate": 0.261
+        }
+      },
+      "passed": false,
+      "reason": "High pause_ratio=0.62 requires top_feature=pause_ratio and score>=0.7; got top=pause_ratio, score=0.699"
+    },
+    {
+      "pass": 3,
+      "output": {
+        "score": 0.821,
+        "flag": "elevated",
+        "top_feature": "pause_ratio",
+        "weights": {
+          "pause_ratio": 0.509,
+          "lexical_diversity": 0.265,
+          "speaking_rate": 0.227
+        }
+      },
+      "passed": true,
+      "reason": "Pass: explicit success criterion met"
+    }
+  ]
+}
