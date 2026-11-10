@@ -35,3 +35,4 @@
 2026-11-07 | Passive multi-modal speech+gait cognitive reserve trajectory flag | GVU boosts pause/gait weights + bias; high-risk sample 0.591 fail -> 0.644 pass2 ok
 2026-11-08 | Continuous wearable gait variability risk flag for progression/fall monitoring | GVU boosts variability weight on high-var sample; pass1 elevated but not prioritized fail -> pass2 variability top 0.494 ok
 2026-11-09 | Speech PSD/pause-prioritized GVU risk flag for early CI detection | GVU boosts pause weight on high-pause sample; pass1 elevated but pause not top fail -> pass2 pause prioritized 1.0 ok
+2026-11-11 | Speech PSD/pause-prioritized GVU risk flag for early CI detection (diagnostics) | GVU boosts pause weight+bias; high-pause sample 0.574 fail -> 0.821 elevated pass3 ok
