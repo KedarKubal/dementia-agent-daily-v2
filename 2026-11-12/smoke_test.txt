@@ -1,0 +1,58 @@
+[
+  {
+    "pass": 1,
+    "output": {
+      "score": 0.777,
+      "flag": "elevated",
+      "top_feature": "var",
+      "weights": {
+        "gait": 0.25,
+        "age": 0.25,
+        "var": 0.5
+      },
+      "bias": 0.1
+    },
+    "verifier": {
+      "pass": false,
+      "reason": "top_feature not age/gait (age-weight not prioritized)"
+    }
+  },
+  {
+    "pass": 2,
+    "output": {
+      "score": 0.844,
+      "flag": "elevated",
+      "top_feature": "var",
+      "weights": {
+        "gait": 0.25960539979231567,
+        "age": 0.38421599169262716,
+        "var": 0.4672897196261682
+      },
+      "bias": 0.1
+    },
+    "verifier": {
+      "pass": false,
+      "reason": "top_feature not age/gait (age-weight not prioritized)"
+    }
+  },
+  {
+    "pass": 3,
+    "output": {
+      "score": 0.836,
+      "flag": "elevated",
+      "top_feature": "age",
+      "weights": {
+        "gait": 0.24421956706708908,
+        "age": 0.4743330119403831,
+        "var": 0.392558532103639
+      },
+      "bias": 0.1
+    },
+    "verifier": {
+      "pass": true,
+      "reason": ""
+    }
+  }
+]
+
+SMOKE: pass1 score=0.777 flag=elevated -> pass3 score=0.836 flag=elevated top=age
