@@ -1,0 +1,41 @@
+{
+  "sample": {
+    "pause_ratio": 0.72,
+    "lexical_diversity": 0.45,
+    "hesitation": 0.55
+  },
+  "logs": [
+    {
+      "pass": 1,
+      "output": {
+        "score": 0.544,
+        "flag": "typical",
+        "top_feature": "lexical_diversity",
+        "weights": {
+          "pause_ratio": 0.2,
+          "lexical_diversity": 0.3,
+          "hesitation": 0.3
+        },
+        "rationale": "Weighted sum with bias 0.1"
+      },
+      "passed": false,
+      "reason": "Failed: high pause sample but top=lexical_diversity, score=0.544 (need pause top and >0.6)"
+    },
+    {
+      "pass": 2,
+      "output": {
+        "score": 0.731,
+        "flag": "elevated",
+        "top_feature": "pause_ratio",
+        "weights": {
+          "pause_ratio": 0.3684210526315789,
+          "lexical_diversity": 0.3157894736842105,
+          "hesitation": 0.3157894736842105
+        },
+        "rationale": "Weighted sum with bias 0.15000000000000002"
+      },
+      "passed": true,
+      "reason": "Pass: pause prioritized and elevated on high-pause sample"
+    }
+  ]
+}
