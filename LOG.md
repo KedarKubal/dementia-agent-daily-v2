@@ -38,3 +38,4 @@
 2026-11-11 | Speech PSD/pause-prioritized GVU risk flag for early CI detection (diagnostics) | GVU boosts pause weight+bias; high-pause sample 0.574 fail -> 0.821 elevated pass3 ok
 2026-11-12 | Age-adjusted gait impairment risk flag for younger-old (nonlinear association insight) | GVU reweights from var-prioritized fail to age-prioritized pass3; score 0.777->0.836 elevated
 2026-11-13 | Linguistic speech-biomarker pause-prioritized risk flag (spoken language biomarker insight) | GVU boosts pause weight on high-pause sample; score 0.544 typical fail -> 0.731 elevated pass2 ok
+2026-11-14 | Passive end-to-end speech voiceprint MCI risk flag (Voiceprints npj Dementia insight) | GVU boosts pause weight+bias; high-pause sample 0.663 fail -> 0.720 elevated pass2 ok
