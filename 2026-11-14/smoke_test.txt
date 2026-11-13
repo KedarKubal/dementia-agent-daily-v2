@@ -1,0 +1,36 @@
+=== Smoke Test: High-risk sample ===
+{
+  "pass": 1,
+  "output": {
+    "risk_score": 0.663,
+    "flag": "elevated",
+    "top_feature": "pause_ratio",
+    "weights": {
+      "pause_ratio": 0.4,
+      "linguistic_informativeness": 0.3,
+      "acoustic_stability": 0.3
+    },
+    "bias": 0.0
+  },
+  "passed": false,
+  "reason": "FAIL: score=0.663 (need >=0.7), top=pause_ratio"
+}
+{
+  "pass": 2,
+  "output": {
+    "risk_score": 0.72,
+    "flag": "elevated",
+    "top_feature": "pause_ratio",
+    "weights": {
+      "pause_ratio": 0.47826086956521735,
+      "linguistic_informativeness": 0.26086956521739124,
+      "acoustic_stability": 0.26086956521739124
+    },
+    "bias": 0.05
+  },
+  "passed": true,
+  "reason": "PASS"
+}
+
+Before (pass 1): {'risk_score': 0.663, 'flag': 'elevated', 'top_feature': 'pause_ratio', 'weights': {'pause_ratio': 0.4, 'linguistic_informativeness': 0.3, 'acoustic_stability': 0.3}, 'bias': 0.0}
+After (final): {'risk_score': 0.72, 'flag': 'elevated', 'top_feature': 'pause_ratio', 'weights': {'pause_ratio': 0.47826086956521735, 'linguistic_informativeness': 0.26086956521739124, 'acoustic_stability': 0.26086956521739124}, 'bias': 0.05}
