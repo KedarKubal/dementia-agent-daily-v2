@@ -40,3 +40,4 @@
 2026-11-13 | Linguistic speech-biomarker pause-prioritized risk flag (spoken language biomarker insight) | GVU boosts pause weight on high-pause sample; score 0.544 typical fail -> 0.731 elevated pass2 ok
 2026-11-14 | Passive end-to-end speech voiceprint MCI risk flag (Voiceprints npj Dementia insight) | GVU boosts pause weight+bias; high-pause sample 0.663 fail -> 0.720 elevated pass2 ok
 2026-11-15 | Speech PSD + fluid biomarker (p-tau217/GFAP) fusion GVU risk flag (diagnostics) | GVU boosts PSD/biomarker weights on high-risk sample; score 0.439 typical fail -> 0.655 elevated top=psd pass3 ok
+2026-11-17 | Gait foundation model embedding/variability risk flag for multi-system progression monitoring | GVU boosts bias on under-threshold sample; score 0.598 typical fail -> 0.698 elevated pass2 ok

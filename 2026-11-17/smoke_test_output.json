@@ -1,0 +1,42 @@
+[
+  {
+    "pass": 1,
+    "output": {
+      "score": 0.598,
+      "flag": "typical",
+      "top_feature": "variability",
+      "weights": {
+        "variability": 0.3,
+        "speed": 0.2,
+        "embedding": 0.3,
+        "age": 0.1,
+        "torso": 0.1
+      },
+      "bias": 0.0
+    },
+    "verifier": {
+      "pass": false,
+      "reason": "Fail: flag=typical, score=0.598, top=variability"
+    }
+  },
+  {
+    "pass": 2,
+    "output": {
+      "score": 0.698,
+      "flag": "elevated",
+      "top_feature": "variability",
+      "weights": {
+        "variability": 0.3,
+        "speed": 0.2,
+        "embedding": 0.3,
+        "age": 0.1,
+        "torso": 0.1
+      },
+      "bias": 0.1
+    },
+    "verifier": {
+      "pass": true,
+      "reason": "ok"
+    }
+  }
+]
