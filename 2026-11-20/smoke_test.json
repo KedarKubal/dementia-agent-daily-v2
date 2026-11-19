@@ -1,0 +1,44 @@
+{
+  "sample": {
+    "pause_ratio": 0.45,
+    "silence_duration_pct": 0.42,
+    "lexical_diversity": 0.55,
+    "speech_rate": 95.0,
+    "has_fluid_marker": true,
+    "p_tau217": 0.28
+  },
+  "logs": [
+    {
+      "pass": 1,
+      "score": 0.45,
+      "label": "typical",
+      "top_feature": "pause",
+      "passed": false,
+      "reason": "High-PSD sample requires elevated+ and PSD/pause top. Got label=typical, top=pause, score=0.450",
+      "weights": {
+        "psd": 0.25,
+        "pause": 0.2,
+        "lex": 0.2,
+        "rate": 0.15,
+        "fluid": 0.2
+      },
+      "bias": 0.05
+    },
+    {
+      "pass": 2,
+      "score": 0.556,
+      "label": "elevated",
+      "top_feature": "pause",
+      "passed": true,
+      "reason": "High-PSD sample requires elevated+ and PSD/pause top. Got label=elevated, top=pause, score=0.556",
+      "weights": {
+        "psd": 0.33,
+        "pause": 0.25,
+        "lex": 0.2,
+        "rate": 0.15,
+        "fluid": 0.2
+      },
+      "bias": 0.1
+    }
+  ]
+}
