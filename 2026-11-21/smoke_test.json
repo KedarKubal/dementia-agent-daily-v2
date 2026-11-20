@@ -1,0 +1,52 @@
+{
+  "sample": {
+    "psd": 0.72,
+    "pause_ratio": 0.65,
+    "mean_pause_duration": 1.8,
+    "lexical_diversity": 0.42,
+    "speech_rate": 1.1,
+    "optional_ptau217": null
+  },
+  "log": [
+    {
+      "pass": 1,
+      "output": {
+        "risk_score": 0.604,
+        "flag": "elevated",
+        "top_feature": "lexical",
+        "weights_used": {
+          "psd": 0.25,
+          "pause_ratio": 0.2,
+          "lexical": 0.35,
+          "rate": 0.2
+        },
+        "bias": 0.0
+      },
+      "verifier": {
+        "pass": false,
+        "reason": "Top feature should prioritize PSD or pause_ratio",
+        "critique": "Boost PSD/pause weights and bias if under-flagging high-pause samples"
+      }
+    },
+    {
+      "pass": 2,
+      "output": {
+        "risk_score": 0.684,
+        "flag": "elevated",
+        "top_feature": "psd",
+        "weights_used": {
+          "psd": 0.367,
+          "pause_ratio": 0.273,
+          "lexical": 0.233,
+          "rate": 0.127
+        },
+        "bias": 0.06
+      },
+      "verifier": {
+        "pass": true,
+        "reason": "Criteria met",
+        "critique": "OK"
+      }
+    }
+  ]
+}
